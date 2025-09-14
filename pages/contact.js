@@ -33,20 +33,20 @@ export default function Contact() {
         <meta name="description" content="Contact Tau Gamma Phi Fraternity" />
       </Head>
 
-      <div className={styles.pageHeader}>
-        <div className={styles.container}>
-          <h1>Contact Us</h1>
-          <p>Get in touch with Tau Gamma Phi</p>
+      <section className={styles.hero}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>Contact Us</h1>
+          <p className={styles.heroSubtitle}>Get in touch with Tau Gamma Phi</p>
         </div>
-      </div>
+      </section>
 
       <main className={styles.main}>
-        <section className={styles.section}>
-          <div className={styles.container}>
+        <section className={`${styles.section} ${styles.sectionLight}`}>
+          <div className={styles.sectionContainer}>
             <div className={styles.contactGrid}>
               <div className={styles.contactInfo}>
-                <h2>Get In Touch</h2>
-                <p>We'd love to hear from you. Reach out to us through any of the following channels:</p>
+                <h2 className={styles.sectionTitle}>Get In Touch</h2>
+                <p className={styles.sectionDescription}>We'd love to hear from you. Reach out to us through any of the following channels:</p>
                 
                 <div className={styles.contactItem}>
                   <h3>Email</h3>
@@ -65,7 +65,7 @@ export default function Contact() {
               </div>
 
               <div className={styles.contactForm}>
-                <h2>Send us a Message</h2>
+                <h2 className={styles.sectionTitle}>Send us a Message</h2>
                 {submitted ? (
                   <div className={styles.successMessage}>
                     <h3>Thank you for your message!</h3>

@@ -13,34 +13,49 @@ export default function Home() {
 
       <Hero />
 
-      <section className={`${styles.section} ${styles.sectionLight}`}>
-        <div className={styles.sectionContainer}>
-          <h2 className={styles.sectionTitle}>Welcome to Tau Gamma Phi</h2>
-          <p className={styles.sectionDescription}>
-            Tau Gamma Phi (ΤΓΦ), also known as the Triskelions' Grand Fraternity, is one of the largest fraternities in the Philippines. Founded on October 4, 1968, we are committed to brotherhood, service, and excellence.
-          </p>
-        </div>
-      </section>
+      <main className={styles.main}>
+        <section className={`${styles.section} ${styles.sectionLight}`}>
+          <div className={styles.sectionContainer}>
+            <h2 className={styles.sectionTitle}>Welcome to Tau Gamma Phi</h2>
+            <p className={styles.sectionDescription}>
+              Tau Gamma Phi (ΤΓΦ), also known as the Triskelions' Grand Fraternity, is one of the largest fraternities in the Philippines. Founded on October 4, 1968, we are committed to brotherhood, service, and excellence.
+            </p>
+          </div>
+        </section>
 
-      <section className={`${styles.section} ${styles.sectionDark}`}>
-        <div className={styles.sectionContainer}>
-          <h2 className={styles.sectionTitle}>Our Core Values</h2>
-          <div className={styles.valuesGrid}>
-            <div className={styles.valueCard}>
-              <h3>Brotherhood</h3>
-              <p>We foster lifelong bonds of friendship and support among our members.</p>
-            </div>
-            <div className={styles.valueCard}>
-              <h3>Service</h3>
-              <p>We are committed to serving our communities and making a positive impact.</p>
-            </div>
-            <div className={styles.valueCard}>
-              <h3>Excellence</h3>
-              <p>We strive for excellence in all our endeavors, both personal and professional.</p>
+        <section className={`${styles.section} ${styles.sectionDark}`}>
+          <div className={styles.sectionContainer}>
+            <h2 className={styles.sectionTitle}>Our Core Values</h2>
+            <div className={styles.valuesGrid}>
+              <div className={styles.valueCard}>
+                <h3>Brotherhood</h3>
+                <p>We foster lifelong bonds of friendship and support among our members.</p>
+              </div>
+              <div className={styles.valueCard}>
+                <h3>Service</h3>
+                <p>We are committed to serving our communities and making a positive impact.</p>
+              </div>
+              <div className={styles.valueCard}>
+                <h3>Excellence</h3>
+                <p>We strive for excellence in all our endeavors, both personal and professional.</p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section className={`${styles.section} ${styles.sectionLight}`}>
+          <div className={styles.sectionContainer}>
+            <h2 className={styles.sectionTitle}>Join Our Brotherhood</h2>
+            <p className={styles.sectionDescription}>
+              Become part of a legacy that spans generations. Learn more about our membership process.
+            </p>
+            <div className={styles.ctaButtons}>
+              <a href="/about" className={styles.primaryButton}>Learn More</a>
+              <a href="/contact" className={styles.secondaryButton}>Contact Us</a>
+            </div>
+          </div>
+        </section>
+      </main>
     </Layout>
   )
 }

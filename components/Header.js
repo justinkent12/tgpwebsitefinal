@@ -9,9 +9,9 @@ export default function Header() {
         <div className={styles.logo}>
           <Link href="/" className={styles.logoLink}>
             <Image
-              src="/tgpseal.jpg"
+              src="/tgp3.jpg"
               alt="Tau Gamma Phi Logo"
-              width={150}
+              width={100}
               height={60}
               className={styles.logoImage}
               priority
