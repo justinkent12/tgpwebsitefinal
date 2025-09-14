@@ -7,6 +7,16 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.headerContainer}>
         <div className={styles.logo}>
+          <Link href="/" className={styles.logoLink}>
+            <Image
+              src="/tgpseal.jpg"
+              alt="Tau Gamma Phi Logo"
+              width={150}
+              height={60}
+              className={styles.logoImage}
+              priority
+            />
+          </Link>
         </div>
         
         <nav>
